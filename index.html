@@ -8,38 +8,34 @@
 <body>
 
 	<style>
-	
-		.red1 {
+
+		.square {
 			height: 100px;
 			width: 100px;
-			border: 1px red solid;
+			background-color: red;
+			margin-top: 10px;
 		}
 
-		.red2 {
-			height: 100px;
-			width: 100px;
-			border: 1px red solid;
-		}
-
-		.green1 {
+		#circle {
 			height: 100px;
 			width: 100px;
 			border-radius: 100px;
-			border: 1px green solid;
+			background-color: green;
 		}
-
-
 
 	</style>
 
-	<div class="red1"></div>
-	<div class="red2"></div>
-	<div class="green1"></div>
-
+		<div id="circle"></div>
+		<div class="square"></div>
+		<div class="square"></div>
 
 	<script>
 
-		if (typeof jQuery != "undefined") {
+		$(".square").click(function() {
+
+			alert("square clicked");
+
+		});
 
 
 	</script>
