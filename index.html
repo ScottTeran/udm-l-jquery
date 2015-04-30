@@ -26,14 +26,16 @@
 	</style>
 
 		<div id="circle"></div>
-		<div class="square"></div>
-		<div class="square"></div>
+	
+		<p>This is some text</p>
+
+		<iframe src="http://www.cnn.com/"></iframe>
 
 	<script>
 
-		$(".square").click(function() {
+		$("#circle").hover(function() {
 
-			alert("square clicked");
+			$("iframe").attr("src", "http://www.cnn.com/more");
 
 		});
 
